@@ -4,4 +4,7 @@
 
 def roll
   # code goes here
+  numbers = [1,2,3,4,5,6]
+  r = rand(numbers.length)
+  numbers[r]
 end
