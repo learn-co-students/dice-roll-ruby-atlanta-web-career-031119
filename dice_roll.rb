@@ -3,5 +3,17 @@
 # Feel free to google "how to generate a random number in ruby"
 
 def roll
-  # code goes here
+  result = rand(1..6)
+  print result
+  result
 end
+
+def roll_set(count, sides=20)
+  result = []
+  count.times do
+    result.push(rand(1..sides))
+  end
+  print result
+end
+
+roll_set(3, 8)
